@@ -1,0 +1,876 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		01D13CD37C414644A187B22E23542210 /* FeatureFlags.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58A66E38AAFD479F8DF880A0E78B5C79 /* FeatureFlags.swift */; };
+		0B509C365308077B8E68879D /* SceneViewControllerDicomIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 887B83A438D198A6F05D634A /* SceneViewControllerDicomIntegrationTests.swift */; };
+		121180022E873D1B00EA1DB6 /* TriPlanarMPR.swift in Sources */ = {isa = PBXBuildFile; fileRef = 121180012E873D1B00EA1DB6 /* TriPlanarMPR.swift */; };
+		126AB2192E872A5500051910 /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 126AB2182E872A5500051910 /* AVKit.framework */; };
+		12CB89792E86CF76009C2E22 /* mpr.metal in Sources */ = {isa = PBXBuildFile; fileRef = 12CB89772E86CF76009C2E22 /* mpr.metal */; };
+		12CB897A2E86CF76009C2E22 /* MPRPlaneMaterial.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12CB89782E86CF76009C2E22 /* MPRPlaneMaterial.swift */; };
+		12CB897B2E86CF76009C2E22 /* DICOMGeometry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12CB89762E86CF76009C2E22 /* DICOMGeometry.swift */; };
+		12CB898D2E86D2A0009C2E22 /* SCNNode+Basis.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12CB898C2E86D2A0009C2E22 /* SCNNode+Basis.swift */; };
+		25571B731DD212E5F2216FAF /* VolumeCubeMaterialDicomTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451425DE76BCF927E205DCCB /* VolumeCubeMaterialDicomTests.swift */; };
+		C00A9A2D2FCB8C6E00ABCDE0 /* ThreadgroupDispatchOptimizerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00A9A2C2FCB8C6E00ABCDE0 /* ThreadgroupDispatchOptimizerTests.swift */; };
+		C00A9A302FCB8F9D00ABCDE0 /* VolumeHistogramCalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00A9A2F2FCB8F9D00ABCDE0 /* VolumeHistogramCalculatorTests.swift */; };
+		50116AA83516432383F7CD90 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3E0886CC1340B8AD7B3C1B /* Logger.swift */; };
+		66072805284328D80028EE15 /* shared.metal in Sources */ = {isa = PBXBuildFile; fileRef = 66072804284328D80028EE15 /* shared.metal */; };
+		66072816284372540028EE15 /* ZIPFoundation in Frameworks */ = {isa = PBXBuildFile; productRef = 66072815284372540028EE15 /* ZIPFoundation */; };
+		6619F07E27A5733900469541 /* ct_lung.tf in Resources */ = {isa = PBXBuildFile; fileRef = 6619F07A27A5733900469541 /* ct_lung.tf */; };
+		66499F4C27A1887200F20AAB /* VolumeCubeMaterial.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66499F4B27A1887200F20AAB /* VolumeCubeMaterial.swift */; };
+		67D0F9525686FB5D167B1E06 /* DicomVolumeLoaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB138A993B050CB71894D09E /* DicomVolumeLoaderTests.swift */; };
+		9C21FBCD27A0D860004CE254 /* SceneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C21FBCC27A0D860004CE254 /* SceneView.swift */; };
+		9C8B3E6A279E8AA600599C97 /* VolumeRendering_iOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C8B3E69279E8AA600599C97 /* VolumeRendering_iOSApp.swift */; };
+		9C8B3E6C279E8AA600599C97 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C8B3E6B279E8AA600599C97 /* ContentView.swift */; };
+		9C8B3E6E279E8AA800599C97 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C8B3E6D279E8AA800599C97 /* Assets.xcassets */; };
+		9C8B3E71279E8AA800599C97 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C8B3E70279E8AA800599C97 /* Preview Assets.xcassets */; };
+		9C8B3E7C279E8C8100599C97 /* volumerendering.metal in Sources */ = {isa = PBXBuildFile; fileRef = 9C8B3E7B279E8C8100599C97 /* volumerendering.metal */; };
+		9C8B3E7E279E96C500599C97 /* Type.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C8B3E7D279E96C500599C97 /* Type.swift */; };
+		9CC39D53279F76000066FC1D /* Math.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC39D52279F76000066FC1D /* Math.swift */; };
+		A1F0D0022F5B4C8E00A1B2C3 /* VolumeDataset.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F0D0012F5B4C8E00A1B2C3 /* VolumeDataset.swift */; };
+		A1F0D0042F5B4C8E00A1B2C3 /* VolumeTextureFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F0D0032F5B4C8E00A1B2C3 /* VolumeTextureFactory.swift */; };
+		A1F0D0062F5B4C8E00A1B2C3 /* DicomVolumeLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F0D0052F5B4C8E00A1B2C3 /* DicomVolumeLoader.swift */; };
+		A1F0D00A2F5B4C8E00A1B2C3 /* DICOMSeriesLoader.mm in Sources */ = {isa = PBXBuildFile; fileRef = A1F0D0092F5B4C8E00A1B2C3 /* DICOMSeriesLoader.mm */; };
+		B6F2A0012F8A1C0000AAAA01 /* VolumeComputeRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F2A0032F8A1C0000AAAA01 /* VolumeComputeRenderer.swift */; };
+		B6F2A0022F8A1C0000AAAA01 /* volume_compute.metal in Sources */ = {isa = PBXBuildFile; fileRef = B6F2A0042F8A1C0000AAAA01 /* volume_compute.metal */; };
+		B6F2A0052F8A1C0000AAAA01 /* AppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F2A0072F8A1C0000AAAA01 /* AppConfig.swift */; };
+		B6F2A0082F8A1C0000AAAA01 /* MetalResourceLabels.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F2A0092F8A1C0000AAAA01 /* MetalResourceLabels.swift */; };
+		B6F2A00C2F8A1C0000AAAA01 /* ArgumentEncoderManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F2A00B2F8A1C0000AAAA01 /* ArgumentEncoderManager.swift */; };
+		B6F2A00F2F8A1C0000AAAA01 /* RenderingParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F2A00E2F8A1C0000AAAA01 /* RenderingParameters.swift */; };
+		B6F2A0402F8A1C0000AAAA01 /* ThreadgroupDispatchOptimizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F2A0412F8A1C0000AAAA01 /* ThreadgroupDispatchOptimizer.swift */; };
+		B6F2A0542F8A1C0000AAAA01 /* calculate_histogram.metal in Sources */ = {isa = PBXBuildFile; fileRef = B6F2A0502F8A1C0000AAAA01 /* calculate_histogram.metal */; };
+		B6F2A0552F8A1C0000AAAA01 /* CubicSplineInterpolator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F2A0512F8A1C0000AAAA01 /* CubicSplineInterpolator.swift */; };
+		B6F2A0562F8A1C0000AAAA01 /* ToneCurveModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F2A0522F8A1C0000AAAA01 /* ToneCurveModel.swift */; };
+		B6F2A0572F8A1C0000AAAA01 /* VolumeHistogramCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F2A0532F8A1C0000AAAA01 /* VolumeHistogramCalculator.swift */; };
+		B6F2A0592F8A1C0000AAAA01 /* ToneCurveEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F2A0582F8A1C0000AAAA01 /* ToneCurveEditorView.swift */; };
+		B6F2A05B2F8A1C0000AAAA01 /* ToneCurveModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F2A05A2F8A1C0000AAAA01 /* ToneCurveModelTests.swift */; };
+		B6F2A12F2F8A1C0000AAAA01 /* WindowLevelPreset.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F2A12E2F8A1C0000AAAA01 /* WindowLevelPreset.swift */; };
+		C0045E2C2F9D21C000123456 /* RendererRegressionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0045E2A2F9D21C000123456 /* RendererRegressionTests.swift */; };
+		E303143527AA65220058A7C7 /* ct_entire.tf in Resources */ = {isa = PBXBuildFile; fileRef = E303143327AA65210058A7C7 /* ct_entire.tf */; };
+		E303143827AA67790058A7C7 /* ct_arteries.tf in Resources */ = {isa = PBXBuildFile; fileRef = E303143727AA67790058A7C7 /* ct_arteries.tf */; };
+		E395877B27A3C445003F54D1 /* TransferFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = E395877A27A3C445003F54D1 /* TransferFunction.swift */; };
+		E3A01DA02FC0A10000AAA001 /* ct_bone.tf in Resources */ = {isa = PBXBuildFile; fileRef = E3A01D9F2FC0A10000AAA001 /* ct_bone.tf */; };
+		E3A01DA22FC0A10000AAA001 /* ct_cardiac.tf in Resources */ = {isa = PBXBuildFile; fileRef = E3A01DA12FC0A10000AAA001 /* ct_cardiac.tf */; };
+		E3A01DA42FC0A10000AAA001 /* ct_liver_vasculature.tf in Resources */ = {isa = PBXBuildFile; fileRef = E3A01DA32FC0A10000AAA001 /* ct_liver_vasculature.tf */; };
+		E3A01DA62FC0A10000AAA001 /* mr_t2_brain.tf in Resources */ = {isa = PBXBuildFile; fileRef = E3A01DA52FC0A10000AAA001 /* mr_t2_brain.tf */; };
+		E3A01DA82FC0A10000AAA001 /* ct_chest_contrast.tf in Resources */ = {isa = PBXBuildFile; fileRef = E3A01DA72FC0A10000AAA001 /* ct_chest_contrast.tf */; };
+		E3A01DAA2FC0A10000AAA001 /* ct_soft_tissue.tf in Resources */ = {isa = PBXBuildFile; fileRef = E3A01DA92FC0A10000AAA001 /* ct_soft_tissue.tf */; };
+		E3A01DAC2FC0A10000AAA001 /* ct_pulmonary_arteries.tf in Resources */ = {isa = PBXBuildFile; fileRef = E3A01DAB2FC0A10000AAA001 /* ct_pulmonary_arteries.tf */; };
+		E3A01DAE2FC0A10000AAA001 /* ct_fat.tf in Resources */ = {isa = PBXBuildFile; fileRef = E3A01DAD2FC0A10000AAA001 /* ct_fat.tf */; };
+		E3A01DB02FC0A10000AAA001 /* mr_angio.tf in Resources */ = {isa = PBXBuildFile; fileRef = E3A01DAF2FC0A10000AAA001 /* mr_angio.tf */; };
+		E3A01DB22FC0A10000AAA001 /* TransferFunctionLoaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3A01DB12FC0A10000AAA001 /* TransferFunctionLoaderTests.swift */; };
+		E3DB020D2844862E001F1E82 /* SceneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3DB020C2844862E001F1E82 /* SceneViewController.swift */; };
+		E436C52017094DD2BD8148A8 /* CommandBufferProfiler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DF2AE1A5F4D462493EB8295 /* CommandBufferProfiler.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C0045E392F9D21E000123456 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9C8B3E5E279E8AA600599C97 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9C8B3E65279E8AA600599C97;
+			remoteInfo = "VolumeRendering-iOS";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0DF2AE1A5F4D462493EB8295 /* CommandBufferProfiler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommandBufferProfiler.swift; sourceTree = "<group>"; };
+		121180012E873D1B00EA1DB6 /* TriPlanarMPR.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TriPlanarMPR.swift; sourceTree = "<group>"; };
+		126AB2182E872A5500051910 /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
+		12CB89762E86CF76009C2E22 /* DICOMGeometry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DICOMGeometry.swift; sourceTree = "<group>"; };
+		12CB89772E86CF76009C2E22 /* mpr.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = mpr.metal; sourceTree = "<group>"; };
+		12CB89782E86CF76009C2E22 /* MPRPlaneMaterial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MPRPlaneMaterial.swift; sourceTree = "<group>"; };
+		12CB898C2E86D2A0009C2E22 /* SCNNode+Basis.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SCNNode+Basis.swift"; sourceTree = "<group>"; };
+		3B3E0886CC1340B8AD7B3C1B /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
+		451425DE76BCF927E205DCCB /* VolumeCubeMaterialDicomTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VolumeCubeMaterialDicomTests.swift; sourceTree = "<group>"; };
+		58A66E38AAFD479F8DF880A0E78B5C79 /* FeatureFlags.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureFlags.swift; sourceTree = "<group>"; };
+		66072804284328D80028EE15 /* shared.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = shared.metal; sourceTree = "<group>"; };
+		6619F07A27A5733900469541 /* ct_lung.tf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ct_lung.tf; sourceTree = "<group>"; };
+		66499F4B27A1887200F20AAB /* VolumeCubeMaterial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VolumeCubeMaterial.swift; sourceTree = "<group>"; };
+		887B83A438D198A6F05D634A /* SceneViewControllerDicomIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneViewControllerDicomIntegrationTests.swift; sourceTree = "<group>"; };
+		9C21FBCC27A0D860004CE254 /* SceneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneView.swift; sourceTree = "<group>"; };
+		9C8B3E66279E8AA600599C97 /* VolumeRendering-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "VolumeRendering-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C8B3E69279E8AA600599C97 /* VolumeRendering_iOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VolumeRendering_iOSApp.swift; sourceTree = "<group>"; };
+		9C8B3E6B279E8AA600599C97 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		9C8B3E6D279E8AA800599C97 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9C8B3E70279E8AA800599C97 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		9C8B3E7B279E8C8100599C97 /* volumerendering.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = volumerendering.metal; sourceTree = "<group>"; };
+		9C8B3E7D279E96C500599C97 /* Type.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Type.swift; sourceTree = "<group>"; };
+		9CC39D52279F76000066FC1D /* Math.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Math.swift; sourceTree = "<group>"; };
+		A1F0D0012F5B4C8E00A1B2C3 /* VolumeDataset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VolumeDataset.swift; sourceTree = "<group>"; };
+		A1F0D0032F5B4C8E00A1B2C3 /* VolumeTextureFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VolumeTextureFactory.swift; sourceTree = "<group>"; };
+		A1F0D0052F5B4C8E00A1B2C3 /* DicomVolumeLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DicomVolumeLoader.swift; sourceTree = "<group>"; };
+		A1F0D0072F5B4C8E00A1B2C3 /* VolumeRendering_iOS-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "VolumeRendering_iOS-Bridging-Header.h"; sourceTree = "<group>"; };
+		A1F0D0082F5B4C8E00A1B2C3 /* DICOMSeriesLoader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DICOMSeriesLoader.h; sourceTree = "<group>"; };
+		A1F0D0092F5B4C8E00A1B2C3 /* DICOMSeriesLoader.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = DICOMSeriesLoader.mm; sourceTree = "<group>"; };
+		B6F2A0032F8A1C0000AAAA01 /* VolumeComputeRenderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VolumeComputeRenderer.swift; sourceTree = "<group>"; };
+		B6F2A0042F8A1C0000AAAA01 /* volume_compute.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = volume_compute.metal; sourceTree = "<group>"; };
+		B6F2A0072F8A1C0000AAAA01 /* AppConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfig.swift; sourceTree = "<group>"; };
+		B6F2A0092F8A1C0000AAAA01 /* MetalResourceLabels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetalResourceLabels.swift; sourceTree = "<group>"; };
+		B6F2A00B2F8A1C0000AAAA01 /* ArgumentEncoderManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArgumentEncoderManager.swift; sourceTree = "<group>"; };
+		B6F2A00E2F8A1C0000AAAA01 /* RenderingParameters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RenderingParameters.swift; sourceTree = "<group>"; };
+		B6F2A0412F8A1C0000AAAA01 /* ThreadgroupDispatchOptimizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadgroupDispatchOptimizer.swift; sourceTree = "<group>"; };
+		B6F2A0502F8A1C0000AAAA01 /* calculate_histogram.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = calculate_histogram.metal; sourceTree = "<group>"; };
+		B6F2A0512F8A1C0000AAAA01 /* CubicSplineInterpolator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CubicSplineInterpolator.swift; sourceTree = "<group>"; };
+		B6F2A0522F8A1C0000AAAA01 /* ToneCurveModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToneCurveModel.swift; sourceTree = "<group>"; };
+		B6F2A0532F8A1C0000AAAA01 /* VolumeHistogramCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VolumeHistogramCalculator.swift; sourceTree = "<group>"; };
+		B6F2A0582F8A1C0000AAAA01 /* ToneCurveEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToneCurveEditorView.swift; sourceTree = "<group>"; };
+		B6F2A05A2F8A1C0000AAAA01 /* ToneCurveModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToneCurveModelTests.swift; sourceTree = "<group>"; };
+		B6F2A12E2F8A1C0000AAAA01 /* WindowLevelPreset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowLevelPreset.swift; sourceTree = "<group>"; };
+		C0045E2A2F9D21C000123456 /* RendererRegressionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RendererRegressionTests.swift; sourceTree = "<group>"; };
+		C00A9A2C2FCB8C6E00ABCDE0 /* ThreadgroupDispatchOptimizerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadgroupDispatchOptimizerTests.swift; sourceTree = "<group>"; };
+		C00A9A2F2FCB8F9D00ABCDE0 /* VolumeHistogramCalculatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VolumeHistogramCalculatorTests.swift; sourceTree = "<group>"; };
+		C0045E312F9D21E000123456 /* VolumeRendering-iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "VolumeRendering-iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E303143327AA65210058A7C7 /* ct_entire.tf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ct_entire.tf; sourceTree = "<group>"; };
+		E303143727AA67790058A7C7 /* ct_arteries.tf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ct_arteries.tf; sourceTree = "<group>"; };
+		E395877A27A3C445003F54D1 /* TransferFunction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferFunction.swift; sourceTree = "<group>"; };
+		E3A01D9F2FC0A10000AAA001 /* ct_bone.tf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ct_bone.tf; sourceTree = "<group>"; };
+		E3A01DA12FC0A10000AAA001 /* ct_cardiac.tf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ct_cardiac.tf; sourceTree = "<group>"; };
+		E3A01DA32FC0A10000AAA001 /* ct_liver_vasculature.tf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ct_liver_vasculature.tf; sourceTree = "<group>"; };
+		E3A01DA52FC0A10000AAA001 /* mr_t2_brain.tf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mr_t2_brain.tf; sourceTree = "<group>"; };
+		E3A01DA72FC0A10000AAA001 /* ct_chest_contrast.tf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ct_chest_contrast.tf; sourceTree = "<group>"; };
+		E3A01DA92FC0A10000AAA001 /* ct_soft_tissue.tf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ct_soft_tissue.tf; sourceTree = "<group>"; };
+		E3A01DAB2FC0A10000AAA001 /* ct_pulmonary_arteries.tf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ct_pulmonary_arteries.tf; sourceTree = "<group>"; };
+		E3A01DAD2FC0A10000AAA001 /* ct_fat.tf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ct_fat.tf; sourceTree = "<group>"; };
+		E3A01DAF2FC0A10000AAA001 /* mr_angio.tf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mr_angio.tf; sourceTree = "<group>"; };
+		E3A01DB12FC0A10000AAA001 /* TransferFunctionLoaderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferFunctionLoaderTests.swift; sourceTree = "<group>"; };
+		E3DB020C2844862E001F1E82 /* SceneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneViewController.swift; sourceTree = "<group>"; };
+		EB138A993B050CB71894D09E /* DicomVolumeLoaderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DicomVolumeLoaderTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9C8B3E63279E8AA600599C97 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				126AB2192E872A5500051910 /* AVKit.framework in Frameworks */,
+				66072816284372540028EE15 /* ZIPFoundation in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0045E332F9D21E000123456 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		12626D482E874EC000148888 /* DICOM */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DICOM;
+			sourceTree = "<group>";
+		};
+		126AB2172E872A5500051910 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				126AB2182E872A5500051910 /* AVKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		66320B4428430A1E005D3347 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				66320B4728430A41005D3347 /* Core */,
+				66320B4528430A2C005D3347 /* Helper */,
+				66320B4628430A3B005D3347 /* View */,
+				A1F0D00B2F5B4C8E00A1B2C3 /* Bridging */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		66320B4528430A2C005D3347 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				58A66E38AAFD479F8DF880A0E78B5C79 /* FeatureFlags.swift */,
+				0DF2AE1A5F4D462493EB8295 /* CommandBufferProfiler.swift */,
+				3B3E0886CC1340B8AD7B3C1B /* Logger.swift */,
+				B6F2A0072F8A1C0000AAAA01 /* AppConfig.swift */,
+				B6F2A0092F8A1C0000AAAA01 /* MetalResourceLabels.swift */,
+				9C8B3E7D279E96C500599C97 /* Type.swift */,
+				9CC39D52279F76000066FC1D /* Math.swift */,
+				12CB898C2E86D2A0009C2E22 /* SCNNode+Basis.swift */,
+				A1F0D0052F5B4C8E00A1B2C3 /* DicomVolumeLoader.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		66320B4628430A3B005D3347 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				121180012E873D1B00EA1DB6 /* TriPlanarMPR.swift */,
+				9C21FBCC27A0D860004CE254 /* SceneView.swift */,
+				9C8B3E6B279E8AA600599C97 /* ContentView.swift */,
+				9C8B3E69279E8AA600599C97 /* VolumeRendering_iOSApp.swift */,
+				E3DB020C2844862E001F1E82 /* SceneViewController.swift */,
+				B6F2A0582F8A1C0000AAAA01 /* ToneCurveEditorView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		66320B4728430A41005D3347 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				12CB89762E86CF76009C2E22 /* DICOMGeometry.swift */,
+				12CB89772E86CF76009C2E22 /* mpr.metal */,
+				12CB89782E86CF76009C2E22 /* MPRPlaneMaterial.swift */,
+				9C8B3E7B279E8C8100599C97 /* volumerendering.metal */,
+				66072804284328D80028EE15 /* shared.metal */,
+				66499F4B27A1887200F20AAB /* VolumeCubeMaterial.swift */,
+				B6F2A0032F8A1C0000AAAA01 /* VolumeComputeRenderer.swift */,
+				B6F2A00B2F8A1C0000AAAA01 /* ArgumentEncoderManager.swift */,
+				B6F2A00E2F8A1C0000AAAA01 /* RenderingParameters.swift */,
+				B6F2A0412F8A1C0000AAAA01 /* ThreadgroupDispatchOptimizer.swift */,
+				B6F2A0512F8A1C0000AAAA01 /* CubicSplineInterpolator.swift */,
+				B6F2A0522F8A1C0000AAAA01 /* ToneCurveModel.swift */,
+				B6F2A0532F8A1C0000AAAA01 /* VolumeHistogramCalculator.swift */,
+				B6F2A0042F8A1C0000AAAA01 /* volume_compute.metal */,
+				B6F2A0502F8A1C0000AAAA01 /* calculate_histogram.metal */,
+				E395877A27A3C445003F54D1 /* TransferFunction.swift */,
+				A1F0D0012F5B4C8E00A1B2C3 /* VolumeDataset.swift */,
+				A1F0D0032F5B4C8E00A1B2C3 /* VolumeTextureFactory.swift */,
+				B6F2A12E2F8A1C0000AAAA01 /* WindowLevelPreset.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		66EFC6BA27A4394D0027F0D0 /* TransferFunction */ = {
+			isa = PBXGroup;
+			children = (
+				E303143727AA67790058A7C7 /* ct_arteries.tf */,
+				E3A01D9F2FC0A10000AAA001 /* ct_bone.tf */,
+				E3A01DA12FC0A10000AAA001 /* ct_cardiac.tf */,
+				E3A01DA72FC0A10000AAA001 /* ct_chest_contrast.tf */,
+				E303143327AA65210058A7C7 /* ct_entire.tf */,
+				E3A01DAD2FC0A10000AAA001 /* ct_fat.tf */,
+				E3A01DA32FC0A10000AAA001 /* ct_liver_vasculature.tf */,
+				6619F07A27A5733900469541 /* ct_lung.tf */,
+				E3A01DAB2FC0A10000AAA001 /* ct_pulmonary_arteries.tf */,
+				E3A01DA92FC0A10000AAA001 /* ct_soft_tissue.tf */,
+				E3A01DAF2FC0A10000AAA001 /* mr_angio.tf */,
+				E3A01DA52FC0A10000AAA001 /* mr_t2_brain.tf */,
+			);
+			path = TransferFunction;
+			sourceTree = "<group>";
+		};
+		9C8B3E5D279E8AA600599C97 = {
+			isa = PBXGroup;
+			children = (
+				9C8B3E68279E8AA600599C97 /* VolumeRendering-iOS */,
+				C0045E252F9D215500123456 /* VolumeRendering-iOSTests */,
+				126AB2172E872A5500051910 /* Frameworks */,
+				9C8B3E67279E8AA600599C97 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9C8B3E67279E8AA600599C97 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9C8B3E66279E8AA600599C97 /* VolumeRendering-iOS.app */,
+				C0045E312F9D21E000123456 /* VolumeRendering-iOSTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9C8B3E68279E8AA600599C97 /* VolumeRendering-iOS */ = {
+			isa = PBXGroup;
+			children = (
+				66320B4428430A1E005D3347 /* Source */,
+				9CC39D4F279F6E8F0066FC1D /* Resource */,
+				9C8B3E6D279E8AA800599C97 /* Assets.xcassets */,
+				9C8B3E6F279E8AA800599C97 /* Preview Content */,
+			);
+			path = "VolumeRendering-iOS";
+			sourceTree = "<group>";
+		};
+		9C8B3E6F279E8AA800599C97 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				9C8B3E70279E8AA800599C97 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		9CC39D4F279F6E8F0066FC1D /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				12626D482E874EC000148888 /* DICOM */,
+				66EFC6BA27A4394D0027F0D0 /* TransferFunction */,
+				E395877F27A3D2DC003F54D1 /* Images */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		A1F0D00B2F5B4C8E00A1B2C3 /* Bridging */ = {
+			isa = PBXGroup;
+			children = (
+				A1F0D0072F5B4C8E00A1B2C3 /* VolumeRendering_iOS-Bridging-Header.h */,
+				A1F0D0082F5B4C8E00A1B2C3 /* DICOMSeriesLoader.h */,
+				A1F0D0092F5B4C8E00A1B2C3 /* DICOMSeriesLoader.mm */,
+			);
+			path = Bridging;
+			sourceTree = "<group>";
+		};
+		C0045E252F9D215500123456 /* VolumeRendering-iOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				B6F2A05A2F8A1C0000AAAA01 /* ToneCurveModelTests.swift */,
+				C0045E2A2F9D21C000123456 /* RendererRegressionTests.swift */,
+				C00A9A2C2FCB8C6E00ABCDE0 /* ThreadgroupDispatchOptimizerTests.swift */,
+				C00A9A2F2FCB8F9D00ABCDE0 /* VolumeHistogramCalculatorTests.swift */,
+				EB138A993B050CB71894D09E /* DicomVolumeLoaderTests.swift */,
+				451425DE76BCF927E205DCCB /* VolumeCubeMaterialDicomTests.swift */,
+				887B83A438D198A6F05D634A /* SceneViewControllerDicomIntegrationTests.swift */,
+				E3A01DB12FC0A10000AAA001 /* TransferFunctionLoaderTests.swift */,
+			);
+			path = "VolumeRendering-iOSTests";
+			sourceTree = "<group>";
+		};
+		E395877F27A3D2DC003F54D1 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9C8B3E65279E8AA600599C97 /* VolumeRendering-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9C8B3E74279E8AA800599C97 /* Build configuration list for PBXNativeTarget "VolumeRendering-iOS" */;
+			buildPhases = (
+				9C8B3E62279E8AA600599C97 /* Sources */,
+				9C8B3E63279E8AA600599C97 /* Frameworks */,
+				9C8B3E64279E8AA600599C97 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "VolumeRendering-iOS";
+			packageProductDependencies = (
+				66072815284372540028EE15 /* ZIPFoundation */,
+			);
+			productName = "VolumeRendering-iOS";
+			productReference = 9C8B3E66279E8AA600599C97 /* VolumeRendering-iOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C0045E302F9D21E000123456 /* VolumeRendering-iOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C0045E352F9D21E000123456 /* Build configuration list for PBXNativeTarget "VolumeRendering-iOSTests" */;
+			buildPhases = (
+				C0045E322F9D21E000123456 /* Sources */,
+				C0045E332F9D21E000123456 /* Frameworks */,
+				C0045E342F9D21E000123456 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C0045E382F9D21E000123456 /* PBXTargetDependency */,
+			);
+			name = "VolumeRendering-iOSTests";
+			productName = "VolumeRendering-iOSTests";
+			productReference = C0045E312F9D21E000123456 /* VolumeRendering-iOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9C8B3E5E279E8AA600599C97 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 2600;
+				TargetAttributes = {
+					9C8B3E65279E8AA600599C97 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					C0045E302F9D21E000123456 = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = 9C8B3E65279E8AA600599C97;
+					};
+				};
+			};
+			buildConfigurationList = 9C8B3E61279E8AA600599C97 /* Build configuration list for PBXProject "VolumeRendering-iOS" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9C8B3E5D279E8AA600599C97;
+			packageReferences = (
+				66072814284372540028EE15 /* XCRemoteSwiftPackageReference "ZIPFoundation" */,
+			);
+			productRefGroup = 9C8B3E67279E8AA600599C97 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9C8B3E65279E8AA600599C97 /* VolumeRendering-iOS */,
+				C0045E302F9D21E000123456 /* VolumeRendering-iOSTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9C8B3E64279E8AA600599C97 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E303143827AA67790058A7C7 /* ct_arteries.tf in Resources */,
+				E3A01DA02FC0A10000AAA001 /* ct_bone.tf in Resources */,
+				E3A01DA22FC0A10000AAA001 /* ct_cardiac.tf in Resources */,
+				E3A01DA82FC0A10000AAA001 /* ct_chest_contrast.tf in Resources */,
+				E303143527AA65220058A7C7 /* ct_entire.tf in Resources */,
+				E3A01DAE2FC0A10000AAA001 /* ct_fat.tf in Resources */,
+				E3A01DA42FC0A10000AAA001 /* ct_liver_vasculature.tf in Resources */,
+				6619F07E27A5733900469541 /* ct_lung.tf in Resources */,
+				E3A01DAC2FC0A10000AAA001 /* ct_pulmonary_arteries.tf in Resources */,
+				E3A01DAA2FC0A10000AAA001 /* ct_soft_tissue.tf in Resources */,
+				E3A01DB02FC0A10000AAA001 /* mr_angio.tf in Resources */,
+				E3A01DA62FC0A10000AAA001 /* mr_t2_brain.tf in Resources */,
+				9C8B3E71279E8AA800599C97 /* Preview Assets.xcassets in Resources */,
+				9C8B3E6E279E8AA800599C97 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0045E342F9D21E000123456 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9C8B3E62279E8AA600599C97 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C8B3E6C279E8AA600599C97 /* ContentView.swift in Sources */,
+				9C8B3E7C279E8C8100599C97 /* volumerendering.metal in Sources */,
+				9CC39D53279F76000066FC1D /* Math.swift in Sources */,
+				50116AA83516432383F7CD90 /* Logger.swift in Sources */,
+				E436C52017094DD2BD8148A8 /* CommandBufferProfiler.swift in Sources */,
+				01D13CD37C414644A187B22E23542210 /* FeatureFlags.swift in Sources */,
+				B6F2A0052F8A1C0000AAAA01 /* AppConfig.swift in Sources */,
+				B6F2A0082F8A1C0000AAAA01 /* MetalResourceLabels.swift in Sources */,
+				E3DB020D2844862E001F1E82 /* SceneViewController.swift in Sources */,
+				66499F4C27A1887200F20AAB /* VolumeCubeMaterial.swift in Sources */,
+				B6F2A0012F8A1C0000AAAA01 /* VolumeComputeRenderer.swift in Sources */,
+				B6F2A00C2F8A1C0000AAAA01 /* ArgumentEncoderManager.swift in Sources */,
+				A1F0D0022F5B4C8E00A1B2C3 /* VolumeDataset.swift in Sources */,
+				A1F0D0042F5B4C8E00A1B2C3 /* VolumeTextureFactory.swift in Sources */,
+				9C8B3E6A279E8AA600599C97 /* VolumeRendering_iOSApp.swift in Sources */,
+				66072805284328D80028EE15 /* shared.metal in Sources */,
+				B6F2A0022F8A1C0000AAAA01 /* volume_compute.metal in Sources */,
+				E395877B27A3C445003F54D1 /* TransferFunction.swift in Sources */,
+				121180022E873D1B00EA1DB6 /* TriPlanarMPR.swift in Sources */,
+				9C21FBCD27A0D860004CE254 /* SceneView.swift in Sources */,
+				12CB89792E86CF76009C2E22 /* mpr.metal in Sources */,
+				12CB897A2E86CF76009C2E22 /* MPRPlaneMaterial.swift in Sources */,
+				12CB897B2E86CF76009C2E22 /* DICOMGeometry.swift in Sources */,
+				A1F0D0062F5B4C8E00A1B2C3 /* DicomVolumeLoader.swift in Sources */,
+				9C8B3E7E279E96C500599C97 /* Type.swift in Sources */,
+				12CB898D2E86D2A0009C2E22 /* SCNNode+Basis.swift in Sources */,
+				A1F0D00A2F5B4C8E00A1B2C3 /* DICOMSeriesLoader.mm in Sources */,
+				B6F2A0402F8A1C0000AAAA01 /* ThreadgroupDispatchOptimizer.swift in Sources */,
+				B6F2A00F2F8A1C0000AAAA01 /* RenderingParameters.swift in Sources */,
+				B6F2A0552F8A1C0000AAAA01 /* CubicSplineInterpolator.swift in Sources */,
+				B6F2A0562F8A1C0000AAAA01 /* ToneCurveModel.swift in Sources */,
+				B6F2A0572F8A1C0000AAAA01 /* VolumeHistogramCalculator.swift in Sources */,
+				B6F2A0542F8A1C0000AAAA01 /* calculate_histogram.metal in Sources */,
+				B6F2A12F2F8A1C0000AAAA01 /* WindowLevelPreset.swift in Sources */,
+				B6F2A0592F8A1C0000AAAA01 /* ToneCurveEditorView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0045E322F9D21E000123456 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0045E2C2F9D21C000123456 /* RendererRegressionTests.swift in Sources */,
+				B6F2A05B2F8A1C0000AAAA01 /* ToneCurveModelTests.swift in Sources */,
+				C00A9A2D2FCB8C6E00ABCDE0 /* ThreadgroupDispatchOptimizerTests.swift in Sources */,
+				C00A9A302FCB8F9D00ABCDE0 /* VolumeHistogramCalculatorTests.swift in Sources */,
+				67D0F9525686FB5D167B1E06 /* DicomVolumeLoaderTests.swift in Sources */,
+				25571B731DD212E5F2216FAF /* VolumeCubeMaterialDicomTests.swift in Sources */,
+				0B509C365308077B8E68879D /* SceneViewControllerDicomIntegrationTests.swift in Sources */,
+				E3A01DB22FC0A10000AAA001 /* TransferFunctionLoaderTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C0045E382F9D21E000123456 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9C8B3E65279E8AA600599C97 /* VolumeRendering-iOS */;
+			targetProxy = C0045E392F9D21E000123456 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		9C8B3E72279E8AA800599C97 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = W97G28RHLW;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9C8B3E73279E8AA800599C97 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = W97G28RHLW;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9C8B3E75279E8AA800599C97 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"VolumeRendering-iOS/Preview Content\"";
+				DEVELOPMENT_TEAM = P4VGX44GD8;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Vendor/GDCM/include",
+					"$(PROJECT_DIR)/Vendor/GDCM/include/gdcm-3.3",
+				);
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.medical";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Vendor/GDCM/lib",
+					"$(PROJECT_DIR)/Vendor/GDCM/lib/$(PLATFORM_NAME)",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-lgdcmMSFF",
+					"-lgdcmMEXD",
+					"-lgdcmIOD",
+					"-lgdcmDICT",
+					"-lgdcmDSED",
+					"-lgdcmCommon",
+					"-lgdcmzlib",
+					"-lgdcmexpat",
+					"-lgdcmopenjp2",
+					"-lgdcmcharls",
+					"-lgdcmuuid",
+					"-lsocketxx",
+					"-lgdcmjpeg8",
+					"-lgdcmjpeg12",
+					"-lgdcmjpeg16",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.VolumeRendering;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "VolumeRendering-iOS/Source/Bridging/VolumeRendering_iOS-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9C8B3E76279E8AA800599C97 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"VolumeRendering-iOS/Preview Content\"";
+				DEVELOPMENT_TEAM = P4VGX44GD8;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Vendor/GDCM/include",
+					"$(PROJECT_DIR)/Vendor/GDCM/include/gdcm-3.3",
+				);
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.medical";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Vendor/GDCM/lib",
+					"$(PROJECT_DIR)/Vendor/GDCM/lib/$(PLATFORM_NAME)",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-lgdcmMSFF",
+					"-lgdcmMEXD",
+					"-lgdcmIOD",
+					"-lgdcmDICT",
+					"-lgdcmDSED",
+					"-lgdcmCommon",
+					"-lgdcmzlib",
+					"-lgdcmexpat",
+					"-lgdcmopenjp2",
+					"-lgdcmcharls",
+					"-lgdcmuuid",
+					"-lsocketxx",
+					"-lgdcmjpeg8",
+					"-lgdcmjpeg12",
+					"-lgdcmjpeg16",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.VolumeRendering;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "VolumeRendering-iOS/Source/Bridging/VolumeRendering_iOS-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C0045E362F9D21E000123456 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = P4VGX44GD8;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.VolumeRenderingTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VolumeRendering-iOS.app/VolumeRendering-iOS";
+			};
+			name = Debug;
+		};
+		C0045E372F9D21E000123456 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = P4VGX44GD8;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.VolumeRenderingTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VolumeRendering-iOS.app/VolumeRendering-iOS";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9C8B3E61279E8AA600599C97 /* Build configuration list for PBXProject "VolumeRendering-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9C8B3E72279E8AA800599C97 /* Debug */,
+				9C8B3E73279E8AA800599C97 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9C8B3E74279E8AA800599C97 /* Build configuration list for PBXNativeTarget "VolumeRendering-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9C8B3E75279E8AA800599C97 /* Debug */,
+				9C8B3E76279E8AA800599C97 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C0045E352F9D21E000123456 /* Build configuration list for PBXNativeTarget "VolumeRendering-iOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C0045E362F9D21E000123456 /* Debug */,
+				C0045E372F9D21E000123456 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		66072814284372540028EE15 /* XCRemoteSwiftPackageReference "ZIPFoundation" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/weichsel/ZIPFoundation";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		66072815284372540028EE15 /* ZIPFoundation */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 66072814284372540028EE15 /* XCRemoteSwiftPackageReference "ZIPFoundation" */;
+			productName = ZIPFoundation;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 9C8B3E5E279E8AA600599C97 /* Project object */;
+}
